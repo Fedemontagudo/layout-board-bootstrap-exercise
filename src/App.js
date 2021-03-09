@@ -1,50 +1,52 @@
-import { Col, Container, Row } from "react-bootstrap";
+
+import { Col, Container, Row, Button } from "react-bootstrap";
+import "./index.css";
 
 function App() {
   return (
     <>
       <div className="d-flex contenido">
         <Container as="main" ClassNam="fondo-contenedor vw-75">
-          <Row as="ul" sm={3} lg={4} ClassNam="list-unstyled row row-cols-3 row-cols-lg-4">
+          <Row as="ul" sm={3} lg={4} ClassNam="list-unstyled">
             <li>
-              <button ClassNam="boton gt30 p-3" type="button">Equipos asigndos a mayores de 30</button>
+              <Button id="boton" className="boton gt30 p-3" type="button">Equipos asigndos a mayores de 30</Button>
             </li>
             <li>
-              <button ClassNam="boton tarragona p-3" type="button">Equipos asignados a personas de Tarragona</button>
+              <Button className="boton tarragona p-3" type="button">Equipos asignados a personas de Tarragona</Button>
             </li>
             <li>
-              <button ClassNam="boton provincias p-3" type="button">Provincias donde hay equipos</button>
+              <Button className="boton provincias p-3" type="button">Provincias donde hay equipos</Button>
             </li>
             <li>
-              <button ClassNam="boton puestos p-3" type="button">Puestos de trabajadores con equipo</button>
+              <Button className="boton puestos p-3" type="button">Puestos de trabajadores con equipo</Button>
             </li>
             <li>
-              <button ClassNam="boton edad-media p-3" type="button">Media de edad de los trabajadores</button>
+              <Button className="boton edad-media p-3" type="button">Media de edad de los trabajadores</Button>
             </li>
             <li>
-              <button ClassNam="boton orden-edad p-3" type="button">Equipos ordenados por edad</button>
+              <Button className="boton orden-edad p-3" type="button">Equipos ordenados por edad</Button>
             </li>
             <li>
-              <button ClassNam="boton sobremesa p-3" type="button">Equipos de tipo sobremesa</button>
+              <Button className="boton sobremesa p-3" type="button">Equipos de tipo sobremesa</Button>
             </li>
             <li>
-              <button ClassNam="boton trabajadores-portatil p-3" type="button">Trabajadores con equipo portátil</button>
+              <Button className="boton trabajadores-portatil p-3" type="button">Trabajadores con equipo portátil</Button>
             </li>
             <li>
-              <button ClassNam="boton equipos-tipo p-3" type="button">Equipos organizados por tipo</button>
+              <Button className="boton equipos-tipo p-3" type="button">Equipos organizados por tipo</Button>
             </li>
             <li>
-              <button ClassNam="boton portatiles-tarragona p-3" type="button">Equipos portátiles asignados en
-            Tarragona</button>
+              <Button className="boton portatiles-tarragona p-3" type="button">Equipos portátiles asignados en
+            Tarragona</Button>
             </li>
             <li>
-              <button ClassNam="boton resumen p-3" type="button">Resumen de equipos asignados</button>
+              <Button className="boton resumen p-3" type="button">Resumen de equipos asignados</Button>
             </li>
           </Row>
         </Container>
-        <Col as="aside">
-          <div ClassNam="consola consola-size"></div>
-        </Col>
+        <aside className="lateral">
+          <div ClassNam="consola consola-size">aqui va la consola bien perrona, pero de momento esta in progress</div>
+        </aside>
       </div>
     </>
   );
