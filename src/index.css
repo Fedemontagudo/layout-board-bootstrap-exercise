@@ -17,9 +17,13 @@
   justify-content: center;
   align-items: center;
 }
+ul {
+  list-style-type: none;
+}
 
 li {
   padding: 15px;
+
 }
 
 .consola {
