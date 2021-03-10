@@ -3,12 +3,13 @@
 }
 
 .boton {
-  background-color: #ffc107;
+
   border: none;
   border-radius: 6px;
 }
 
 .lateral {
+
   background-color: #f1ac7b;
   height: 100vh;
   min-width: 30vw;
